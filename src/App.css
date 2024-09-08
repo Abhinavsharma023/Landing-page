@@ -1,0 +1,196 @@
+/* Base styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.landing-page {
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(51, 51, 51, 0.7);
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  color: white;
+}
+
+.navbar h1 {
+  margin: 0;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #007bff;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+  position: relative;
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-section.parallax {
+  background-image: url('https://wallpaperaccess.com/full/5137803.jpg'); /* Replace with your hero image */
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Features Section */
+.features-section {
+  padding: 80px 20px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.features-section h3 {
+  width: 100%;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.feature-item {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  flex: 1 1 300px; /* Allows flexibility in width */
+  max-width: 300px; /* Ensures consistency */
+}
+
+.feature-item:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.feature-item h4 {
+  font-size: 1.8rem;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.feature-item p {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Parallax Sections */
+.parallax-about {
+  background-image: url('https://fairshare.tech/wp-content/uploads/2019/12/Task_management_system.jpg'); /* Replace with your about section image */
+  height: 300px;
+}
+
+.parallax-contact {
+  background-image: url('https://wallpaperaccess.com/full/5137785.jpg'); /* Replace with your contact section image */
+  height: 300px;
+}
+
+/* About and Contact Section */
+.about-section, .contact-section {
+  padding: 50px 20px;
+}
+
+.about-section h3, .contact-section h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about-section p, .contact-section p {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .feature-item {
+    flex: 1 1 45%;
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .feature-item {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
